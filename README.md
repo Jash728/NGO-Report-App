@@ -4,13 +4,13 @@
 
 # 🔧 Tech Stack
 
-## Frontend: Next.js (App Router), Tailwind CSS
+- Frontend: Next.js (App Router), Tailwind CSS
 
-## Backend: API Routes in Next.js
+- Backend: API Routes in Next.js
 
-## Database: MongoDB
+- Database: MongoDB
 
-## Deployment: Vercel
+- Deployment: Vercel
 
 # ✨ Features
 
@@ -47,20 +47,25 @@
 
 - MONGODB_URI – your MongoDB connection string
 
-# 🛠️ Running Locally
+## 🛠️ Running Locally
 
-  1. Clone the repository:
-  ``` bash
-    git clone https://github.com/Jash728/NGO-Report-App.git
+#### Clone the repository:
 
-  2. Install dependencies:
-  ``` bash
-    npm install
+- git clone https://github.com/Jash728/NGO-Report-App.git
+  cd NGO-Report-App
 
-Add a .env.local file:
+#### Install dependencies:
 
-MONGODB_URI=your_mongodb_connection_string
+- npm install
 
-Run the dev server:
+-- Add a .env.local file:
 
-npm run dev
+-- MONGODB_URI=your_mongodb_connection_string
+
+#### Run the dev server:
+
+-- npm run dev
+
+
+
+
