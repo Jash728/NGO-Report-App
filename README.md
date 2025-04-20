@@ -58,13 +58,13 @@
 
 - npm install
 
--- Add a .env.local file:
+- Add a .env.local file:
 
--- MONGODB_URI=your_mongodb_connection_string
+- MONGODB_URI=your_mongodb_connection_string
 
 #### Run the dev server:
 
--- npm run dev
+- npm run dev
 
 
 
