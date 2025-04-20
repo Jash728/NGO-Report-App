@@ -1,36 +1,94 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+NGO Report App
 
-## Getting Started
+A simple full-stack web application that enables NGOs to submit their monthly activity reports and provides a dashboard for administrators to view aggregated impact data.
 
-First, run the development server:
+🔧 Tech Stack
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+Frontend: Next.js (App Router), Tailwind CSS
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Backend: API Routes in Next.js
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+Database: MongoDB
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+Deployment: Vercel
 
-## Learn More
+✨ Features
 
-To learn more about Next.js, take a look at the following resources:
+NGO Report Submission
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+NGOs can submit monthly reports including:
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+NGO ID
 
-## Deploy on Vercel
+Month
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+People Helped
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Events Conducted
+
+Funds Utilized
+
+Admin Dashboard
+
+View summarized data across all NGOs for a selected month:
+
+Total NGOs reported
+
+Total People Helped
+
+Total Events Conducted
+
+Total Funds Utilized
+
+Bonus Features
+
+Loading and empty states for better UX
+
+Light and clean UI using Tailwind CSS
+
+Form validation with error handling and success messages
+
+📁 Project Structure (Highlights)
+
+/app
+  /api
+    /report
+      route.js
+    /dashboard
+      route.js
+  /report
+    page.jsx
+  /dashboard
+    page.jsx
+  layout.js
+  page.js
+
+/lib
+  mongodb.js
+
+🚀 Deployment
+
+This app is deployed using Vercel:
+
+Live App: https://ngo-report-app.vercel.app
+
+Make sure to set the following environment variable in Vercel:
+
+MONGODB_URI – your MongoDB connection string
+
+🛠️ Running Locally
+
+Clone the repository:
+
+git clone https://github.com/Jash728/NGO-Report-App.git
+cd NGO-Report-App
+
+Install dependencies:
+
+npm install
+
+Add a .env.local file:
+
+MONGODB_URI=your_mongodb_connection_string
+
+Run the dev server:
